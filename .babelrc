@@ -12,5 +12,5 @@
       }
     ]
   ],
-  "plugins": ["babel-plugin-transform-class-properties"]
+  "plugins": ["babel-plugin-transform-class-properties", "react-hot-loader/babel"]
 }
