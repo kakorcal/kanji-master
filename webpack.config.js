@@ -31,10 +31,19 @@ module.exports = {
     hot: true,
     publicPath: '/',
     historyApiFallback: true
-    // https: true
   },
   module: {
     rules: [
+      {
+        test: /\.(ttf|eot|woff|woff2)$/,
+        include: /(client\/fonts)/,
+        use: {
+          loader: 'file-loader',
+          options: {
+            name: 'fonts/[name].[ext]'
+          }
+        }
+      },
       {
         test: /\.css$/,
         include: /(node_modules\/normalize\.css|client\/css)/,

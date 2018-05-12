@@ -1,6 +1,17 @@
-#app {
-  transform: translate(50px, 50px);
-  border-radius: 3px;
-  color: red;
-  display: flex;
+@font-face {
+  font-family: 'multicolore';
+  src: url('../fonts/multicolore/multicolore-webfont.woff') format('woff2'),
+    url('../fonts/multicolore/multicolore-webfont.woff') format('woff');
+  /* url("../fonts/multicolore/multicolore-webfont.eot") format("embedded-opentype"), */
+  /* url("../fonts/multicolore/multicolore-webfont.ttf") format("truetype"); */
+}
+
+body {
+  font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande',
+    sans-serif;
+  font-weight: 300;
+}
+
+h1 {
+  font-family: 'multicolore';
 }
