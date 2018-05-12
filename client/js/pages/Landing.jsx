@@ -4,6 +4,7 @@ import { StateContext } from '../StateProvider';
 const Landing = () => (
   <div>
     <h1>Landing</h1>
+    <div className="douty" />
     <StateContext.Consumer>
       {context => (
         <React.Fragment>

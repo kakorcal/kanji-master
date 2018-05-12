@@ -12,6 +12,11 @@ body {
   font-weight: 300;
 }
 
-h1 {
-  font-family: 'multicolore';
+.douty {
+  background-image: url('../imgs/douty.svg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 100%;
+  width: 100px;
+  height: 100px;
 }

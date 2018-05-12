@@ -35,12 +35,22 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(ttf|eot|woff|woff2)$/,
-        include: /(client\/fonts)/,
+        test: /\.svg/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'svg-url-loader',
+          options: {
+            name: '[name].[ext]'
+          }
+        }
+      },
+      {
+        test: /\.(ttf|eot|woff|woff2|jpg|png)$/,
+        exclude: /node_modules/,
         use: {
           loader: 'file-loader',
           options: {
-            name: 'fonts/[name].[ext]'
+            name: '[name].[ext]'
           }
         }
       },
