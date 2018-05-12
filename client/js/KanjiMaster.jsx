@@ -1,28 +1,28 @@
-import React, { Component } from 'react';
-import axios from 'axios';
+import React from 'react';
+import { Route, Switch } from 'react-router-dom';
+import { StateProvider } from './StateProvider';
+import Landing from './pages/Landing';
+import Login from './pages/Login';
+import Logout from './pages/Logout';
+import Learn from './pages/Learn';
+import Profile from './pages/Profile';
+import Challenges from './pages/Challenges';
+import Challenge from './pages/Challenge';
+import FourOhFour from './pages/FourOhFour';
 
-class KanjiMaster extends Component {
-  state = {
-    message: 'hello'
-  };
-  updateMessage = () => {
-    axios
-      .get(`${BASE_API_URL}/api`)
-      .then(data => {
-        this.setState({ message: JSON.stringify(data) });
-      })
-      .catch(err => {
-        this.setState({ message: JSON.stringify(err) });
-      });
-  };
-  render() {
-    return (
-      <div>
-        <h1>{this.state.message}</h1>
-        <button onClick={this.updateMessage}>update</button>
-      </div>
-    );
-  }
-}
+const KanjiMaster = () => (
+  <StateProvider>
+    <Switch>
+      <Route exact path="/" component={Landing} />
+      <Route path="/login" component={Login} />
+      <Route path="/logout" component={Logout} />
+      <Route path="/learn" component={Learn} />
+      <Route path="/profile" component={Profile} />
+      <Route path="/challenges" component={Challenges} />
+      <Route path="/challenges/:challenge_id" component={Challenge} />
+      <Route component={FourOhFour} />
+    </Switch>
+  </StateProvider>
+);
 
 export default KanjiMaster;
