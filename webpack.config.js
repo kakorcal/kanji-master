@@ -2,15 +2,14 @@ const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
-
-const ENV = process.env.NODE_ENV;
+const { ENV, BASE_URL, DEV_PORT, API_PORT } = require('./constants');
 
 module.exports = {
   mode: ENV,
   context: __dirname,
   entry: [
     'react-hot-loader/patch',
-    'webpack-dev-server/client?http://localhost:8080',
+    `webpack-dev-server/client?${BASE_URL}${DEV_PORT}`,
     'webpack/hot/only-dev-server',
     './client/js/App.jsx'
   ],
@@ -85,7 +84,7 @@ module.exports = {
         // proxy the Webpack Dev Server endpoint
         // (which should be serving on http://localhost:8080/)
         // through BrowserSync
-        proxy: 'http://localhost:8080/'
+        proxy: `${BASE_URL}${DEV_PORT}`
       },
       // plugin options
       {
@@ -100,6 +99,9 @@ module.exports = {
       filename: 'index.html',
       // inject at the bottom of the body tag
       inject: 'body'
+    }),
+    new webpack.DefinePlugin({
+      BASE_API_URL: JSON.stringify(`${BASE_URL}${API_PORT}`)
     })
   ]
 };

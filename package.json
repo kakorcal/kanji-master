@@ -10,7 +10,7 @@
     "test": "NODE_ENV=test jest",
     "test:update": "NODE_ENV=test jest -u",
     "test:coverage": "NODE_ENV=test jest --coverage",
-    "dev:server": "NODE_ENV=development nodemon"
+    "api": "NODE_ENV=development nodemon server/app.js"
   },
   "dependencies": {
     "axios": "^0.18.0",
@@ -41,6 +41,7 @@
     "browser-sync": "^2",
     "browser-sync-webpack-plugin": "^2.2.2",
     "css-loader": "^0.28.11",
+    "dotenv": "^5.0.1",
     "enzyme": "^3.3.0",
     "eslint": "^4.19.1",
     "eslint-config-airbnb": "^16.1.0",

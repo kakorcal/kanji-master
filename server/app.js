@@ -6,15 +6,20 @@ const morgan = require('morgan');
 const cors = require('cors');
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const { API_PORT } = require('../constants');
 // const ENV = process.env.NODE_ENV || 'development';
 
+app.set('x-powered-by', false);
 app.use(morgan('common'));
 app.use(cors());
 app.use('/dist', express.static('/dist'));
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(methodOverride('X-HTTP-Method-Override'));
 
-app.listen(() => {
-  console.log(`Listening to port ${PORT}`);
+app.get('/api', (req, res) => {
+  res.json({ message: 'hooray! welcome to our api!' });
 });
+
+app.listen(API_PORT);
+console.log(`Listening to port ${API_PORT}`);
