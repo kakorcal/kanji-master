@@ -14,14 +14,14 @@ import TestComponent from './pages/TestComponent';
 const KanjiMaster = () => (
   <StateProvider>
     <Switch>
-      <Route exact path="/" component={TestComponent} />
-      <Route path="/landing" component={Landing} />
+      <Route exact path="/" component={Landing} />
       <Route path="/login" component={Login} />
       <Route path="/logout" component={Logout} />
       <Route path="/learn" component={Learn} />
       <Route path="/profile" component={Profile} />
       <Route path="/challenges" component={Challenges} />
       <Route path="/challenges/:challenge_id" component={Challenge} />
+      <Route path="/test" component={TestComponent} />
       <Route component={FourOhFour} />
     </Switch>
   </StateProvider>

@@ -13,9 +13,8 @@ const TestComponent = () => (
         <React.Fragment>
           <p>{context.state.isLoading ? 'true' : 'false'}</p>
           <button onClick={context.toggleLoad}>
-            <span role="img" aria-label="EMOJI" aria-labelledBy="EMOJI">
-              🍰🍥🎂
-            </span>
+            Toggle
+            {/* <span role="img" aria-label="EMOJI" aria-labelledBy="EMOJI">🍰🍥🎂</span> */}
           </button>
         </React.Fragment>
       )}
