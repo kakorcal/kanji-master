@@ -59,7 +59,7 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        include: /(node_modules\/normalize\.css|client\/css)/,
+        include: /client\/css/,
         use: [
           {
             loader: 'style-loader'

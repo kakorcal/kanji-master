@@ -1,6 +1,5 @@
 {
   'extends': 'stylelint-config-recommended',
-  'ignoreFiles': ['**/node_modules'],
   'plugins': ['stylelint-no-unsupported-browser-features'],
     'rules': {
       'plugin/no-unsupported-browser-features': [
