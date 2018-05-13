@@ -1,5 +1,5 @@
-import postcssPresetEnv from 'postcss-preset-env';
-import stylelint from 'stylelint';
+const postcssPresetEnv = require('postcss-preset-env');
+const stylelint = require('stylelint');
 
 module.exports = {
   plugins: [

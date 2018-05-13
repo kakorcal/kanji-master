@@ -1,23 +1,5 @@
 import React from 'react';
-import { StateContext } from '../StateProvider';
 
-const Landing = () => (
-  <div>
-    <h1>Landing</h1>
-    <div className="douty" />
-    <StateContext.Consumer>
-      {context => (
-        <React.Fragment>
-          <p>{context.state.isLoading ? 'true' : 'false'}</p>
-          <button onClick={context.toggleLoad}>
-            <span role="img" aria-label="EMOJI" aria-labelledBy="EMOJI">
-              🍰🍥🎂
-            </span>
-          </button>
-        </React.Fragment>
-      )}
-    </StateContext.Consumer>
-  </div>
-);
+const Landing = () => <div>Landing</div>;
 
 export default Landing;

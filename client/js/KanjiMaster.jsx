@@ -9,11 +9,13 @@ import Profile from './pages/Profile';
 import Challenges from './pages/Challenges';
 import Challenge from './pages/Challenge';
 import FourOhFour from './pages/FourOhFour';
+import TestComponent from './pages/TestComponent';
 
 const KanjiMaster = () => (
   <StateProvider>
     <Switch>
-      <Route exact path="/" component={Landing} />
+      <Route exact path="/" component={TestComponent} />
+      <Route path="/landing" component={Landing} />
       <Route path="/login" component={Login} />
       <Route path="/logout" component={Logout} />
       <Route path="/learn" component={Learn} />
