@@ -1,6 +1,6 @@
 {
   "extends": ["airbnb", "prettier", "prettier/react"],
-  "plugins": ["prettier"],
+  "plugins": ["prettier", "compat"],
   "parser": "babel-eslint",
   "parserOptions": {
     "ecmaVersion": 2016,
@@ -17,5 +17,8 @@
   },
   "globals": {
     "BASE_API_URL": true
+  },
+  "rules": {
+    "compat/compat": "error"
   }
 }
