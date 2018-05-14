@@ -1,22 +1,86 @@
-@font-face {
-  font-family: 'multicolore';
-  src: url('../fonts/multicolore/multicolore-webfont.woff') format('woff2'),
-    url('../fonts/multicolore/multicolore-webfont.woff') format('woff');
-  /* url("../fonts/multicolore/multicolore-webfont.eot") format("embedded-opentype"), */
-  /* url("../fonts/multicolore/multicolore-webfont.ttf") format("truetype"); */
+/* stylelint-disable */
+:root {
+  --font-helvetica: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande',
+    sans-serif;
+  --font-multicolore: 'multicolore';
+  --font-size: 1rem;
+  --button-green: #46bf5c;
+  --button-green--hover: color(#46bf5c blackness(30%));
+}
+/* stylelint-enable */
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  width: 100%;
+  height: 100%;
+}
+
+html {
+  font-size: 14px;
 }
 
 body {
-  font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande',
-    sans-serif;
+  font-family: var(--font-helvetica);
   font-weight: 300;
 }
 
-.douty {
-  background-image: url('../imgs/douty.svg');
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: 100%;
-  width: 100px;
-  height: 100px;
+@media (--medium-devices) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media (--large-devices) {
+  html {
+    font-size: 18px;
+  }
+}
+
+@media (--extra-large-1) {
+  html {
+    font-size: 20px;
+  }
+}
+
+@media (--extra-large-2) {
+  html {
+    font-size: 22px;
+  }
+}
+
+@media (--extra-large-3) {
+  html {
+    font-size: 24px;
+  }
+}
+
+@media (--extra-large-4) {
+  html {
+    font-size: 26px;
+  }
+}
+
+@media (--extra-large-5) {
+  html {
+    font-size: 28px;
+  }
+}
+
+@media (--extra-large-6) {
+  html {
+    font-size: 30px;
+  }
+}
+
+@media (--extra-large-7) {
+  html {
+    font-size: 32px;
+  }
 }

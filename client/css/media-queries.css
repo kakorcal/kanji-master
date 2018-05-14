@@ -1,0 +1,9 @@
+@custom-media --medium-devices (width >= 600px) and (width < 768px);
+@custom-media --large-devices (width >= 768px) and (width < 992px);
+@custom-media --extra-large-1 (width >= 992px) and (width < 1200px);
+@custom-media --extra-large-2 (width >= 1200px) and (width < 1400px);
+@custom-media --extra-large-3 (width >= 1400px) and (width < 1500px);
+@custom-media --extra-large-4 (width >= 1500px) and (width < 1600px);
+@custom-media --extra-large-5 (width >= 1600px) and (width < 1700px);
+@custom-media --extra-large-6 (width >= 1700px) and (width < 1800px);
+@custom-media --extra-large-7 (width >= 1800px);

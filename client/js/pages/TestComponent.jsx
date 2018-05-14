@@ -19,6 +19,7 @@ const TestComponent = () => (
         </React.Fragment>
       )}
     </StateContext.Consumer>
+    <div className="douty-full" />
   </div>
 );
 

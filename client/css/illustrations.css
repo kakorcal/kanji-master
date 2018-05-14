@@ -1,0 +1,26 @@
+/* stylelint-disable */
+.illustration__douty {
+  background-image: url('../imgs/douty.svg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 100%;
+  width: 100px;
+  height: 100px;
+}
+
+.illustration__douty--full {
+  background-image: url('../imgs/douty-full.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 100%;
+}
+
+.illustration__overlay {
+  background-image: url('../imgs/overlay.svg');
+  background-size: 60%;
+  background-repeat: repeat;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+}
+/* stylelint-enable */

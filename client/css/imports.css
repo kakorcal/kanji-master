@@ -1,5 +1,5 @@
+@import './fonts.css';
+@import './media-queries.css';
 @import './base.css';
-
-body {
-  display: flex;
-}
+@import './illustrations.css';
+@import './pages/Landing.css';
