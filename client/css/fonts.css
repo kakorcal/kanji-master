@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+
 /* stylelint-disable */
 @font-face {
   font-family: 'multicolore';
@@ -5,5 +7,6 @@
     url('../fonts/multicolore/multicolore-webfont.woff') format('woff');
   /* url("../fonts/multicolore/multicolore-webfont.eot") format("embedded-opentype"), */
   /* url("../fonts/multicolore/multicolore-webfont.ttf") format("truetype"); */
+  font-weight: 300;
 }
 /* stylelint-enable */

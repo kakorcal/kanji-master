@@ -1,7 +1,8 @@
 :root {
   --font-helvetica: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande',
     sans-serif;
-  --font-multicolore: 'multicolore';
+  --font-multicolore: 'multicolore', var(--font-helvetica);
+  --font-varela: 'Varela Round', var(--font-multicolore);
   --font-size: 1rem;
   --button-green: #46bf5c;
 }
@@ -25,7 +26,6 @@ html {
 
 body {
   font-family: var(--font-helvetica);
-  font-weight: 300;
 }
 
 @media (--medium-1) {
