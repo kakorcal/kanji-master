@@ -1,13 +1,10 @@
-/* stylelint-disable */
 :root {
   --font-helvetica: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande',
     sans-serif;
   --font-multicolore: 'multicolore';
   --font-size: 1rem;
   --button-green: #46bf5c;
-  --button-green--hover: color(#46bf5c blackness(30%));
 }
-/* stylelint-enable */
 
 *,
 *:after,
@@ -31,13 +28,13 @@ body {
   font-weight: 300;
 }
 
-@media (--medium-devices) {
+@media (--medium-1) {
   html {
     font-size: 16px;
   }
 }
 
-@media (--large-devices) {
+@media (--large-1) {
   html {
     font-size: 18px;
   }

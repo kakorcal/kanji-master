@@ -5,7 +5,8 @@
       'plugin/no-unsupported-browser-features': [
         true,
         {
-          'browsers': ['last 2 versions'],
+          'browsers': ['defaults'],
+          'ignore': ['rem', 'css-table', 'css-appearance', 'outline', 'transforms2d', 'viewport-units', 'border-radius', 'calc'],
           'severity': 'warning'
         }
       ]

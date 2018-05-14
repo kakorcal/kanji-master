@@ -1,5 +1,8 @@
-@custom-media --medium-devices (width >= 600px) and (width < 768px);
-@custom-media --large-devices (width >= 768px) and (width < 992px);
+@custom-media --extra-small-1 (width >= 320px) and (width < 400px);
+@custom-media --small-2 (width >= 400px) and (width < 568px);
+@custom-media --small-3 (width >= 568px) and (width < 600px);
+@custom-media --medium-1 (width >= 600px) and (width < 768px);
+@custom-media --large-1 (width >= 768px) and (width < 992px);
 @custom-media --extra-large-1 (width >= 992px) and (width < 1200px);
 @custom-media --extra-large-2 (width >= 1200px) and (width < 1400px);
 @custom-media --extra-large-3 (width >= 1400px) and (width < 1500px);

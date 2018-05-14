@@ -47,12 +47,12 @@
   }
 
   & a:hover {
-    background: var(--button-green--hover);
+    background: color-mod(var(--button-green) blackness(30%));
   }
 
   & a:active {
     position: relative;
-    top: 1px;
+    top: 2px;
   }
 }
 
