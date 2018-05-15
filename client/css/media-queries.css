@@ -10,3 +10,6 @@
 @custom-media --extra-large-5 (width >= 1600px) and (width < 1700px);
 @custom-media --extra-large-6 (width >= 1700px) and (width < 1800px);
 @custom-media --extra-large-7 (width >= 1800px);
+@custom-media --phone-breakpoint (width >= 415px);
+@custom-media --tablet-breakpoint (width >= 768px);
+@custom-media --desktop-breakpoint (width >= 1200px);
