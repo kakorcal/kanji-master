@@ -33,24 +33,101 @@
 .hero__douty {
   position: absolute;
   bottom: 0;
-  right: 5%;
-  width: 20rem;
-  height: 20rem;
+  right: 0;
+  width: 40vw;
+  height: 80vh;
   transform-origin: right;
   transform: scale(1.2, 1);
+  z-index: 4000;
 }
 
 .hero__nav {
-  padding-top: 5%;
+  padding-top: 2.5%;
   padding-right: 5%;
   position: absolute;
   top: 0;
   right: 0;
-  width: 100%;
-  text-align: right;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
 }
 
 .hero__nav__item {
-  display: inline;
-  margin-left: 0.6rem;
+  margin-left: 0.8rem;
+
+  & a {
+    display: inline-block;
+    width: calc(var(--font-size) * 6);
+    text-align: center;
+  }
+}
+
+.hero__kanji__cards {
+  position: absolute;
+  bottom: 15%;
+  left: 5%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  z-index: 3000;
+}
+
+.hero__kanji__card {
+  position: relative;
+  color: var(--white);
+  border-radius: 20px;
+  border-top-width: 0.0625rem;
+  border-bottom-width: 0.2625rem;
+  border-color: rgba(0, 0, 0, 0.2);
+  border-style: solid;
+}
+
+.hero__kanji__card:nth-child(1) {
+  background: var(--pink);
+  transform: rotate(-15deg) translate(25px, 0px);
+  width: calc(var(--font-size) * 8);
+  height: calc(var(--font-size) * 10);
+  font-size: calc(var(--font-size) * 4);
+}
+
+.hero__kanji__card:nth-child(2) {
+  background: var(--purple);
+  transform: rotate(5deg) translate(25px, 40px);
+  width: calc(var(--font-size) * 6);
+  height: calc(var(--font-size) * 8);
+  font-size: calc(var(--font-size) * 3);
+}
+
+.hero__kanji__card:nth-child(3) {
+  background: var(--black-lighter);
+  transform: rotate(-5deg) translate(20px, -30px);
+  width: calc(var(--font-size) * 7);
+  height: calc(var(--font-size) * 9);
+  font-size: calc(var(--font-size) * 3.5);
+}
+
+.hero__kanji__card:nth-child(4) {
+  background: var(--blue);
+  transform: rotate(20deg) translate(10px, 60px);
+  width: calc(var(--font-size) * 7);
+  height: calc(var(--font-size) * 9);
+  font-size: calc(var(--font-size) * 3.5);
+}
+
+.hero__kanji__card:nth-child(5) {
+  background: var(--red);
+  transform: rotate(10deg) translate(-45px, -30px);
+  width: calc(var(--font-size) * 6);
+  height: calc(var(--font-size) * 8);
+  font-size: calc(var(--font-size) * 3);
+}
+
+.hero__kanji__character {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0 auto;
+  text-align: center;
+  right: 0;
+  left: 0;
 }
