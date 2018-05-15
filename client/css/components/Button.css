@@ -1,0 +1,93 @@
+.button {
+  & a {
+    border-radius: 20px;
+    padding: 1rem;
+    color: white;
+    text-decoration: none;
+    border-top-width: 0.0625rem;
+    border-bottom-width: 0.2625rem;
+    border-color: rgba(0, 0, 0, 0.2);
+    border-style: solid;
+  }
+
+  & a:active {
+    position: relative;
+    top: 2px;
+  }
+}
+
+/* stylelint-disable */
+.button--green {
+  & a {
+    background: var(--green);
+  }
+
+  & a:hover {
+    background: color-mod(var(--green) blackness(30%));
+  }
+}
+
+.button--blue {
+  & a {
+    background: var(--blue);
+  }
+
+  & a:hover {
+    background: color-mod(var(--blue) blackness(30%));
+  }
+}
+
+.button--yellow {
+  & a {
+    background: var(--yellow);
+  }
+
+  & a:hover {
+    background: color-mod(var(--yellow) blackness(30%));
+  }
+}
+
+.button--red {
+  & a {
+    background: var(--red);
+  }
+
+  & a:hover {
+    background: color-mod(var(--red) blackness(30%));
+  }
+}
+
+.button--pink {
+  & a {
+    background: var(--pink);
+  }
+
+  & a:hover {
+    background: color-mod(var(--pink) blackness(30%));
+  }
+}
+
+.button--small {
+  & a {
+    font-size: calc(var(--font-size) * 0.5);
+  }
+}
+
+.button--medium {
+  & a {
+    font-size: calc(var(--font-size) * 1);
+  }
+}
+
+.button--large {
+  & a {
+    font-size: calc(var(--font-size) * 1.5);
+  }
+}
+
+.button--extra-large {
+  & a {
+    font-size: calc(var(--font-size) * 2);
+  }
+}
+/* stylelint-enable */

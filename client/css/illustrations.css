@@ -4,11 +4,9 @@
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: 100%;
-  width: 100px;
-  height: 100px;
 }
 
-.illustration__douty--full {
+.illustration__douty__full {
   background-image: url('../imgs/douty-full.svg');
   background-size: contain;
   background-repeat: no-repeat;

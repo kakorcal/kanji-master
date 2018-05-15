@@ -3,4 +3,5 @@
 @import './media-queries.css';
 @import './base.css';
 @import './illustrations.css';
+@import './components/Button.css';
 @import './pages/Landing.css';

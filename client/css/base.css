@@ -4,7 +4,26 @@
   --font-multicolore: 'multicolore', var(--font-helvetica);
   --font-varela: 'Varela Round', var(--font-multicolore);
   --font-size: 1rem;
-  --button-green: #46bf5c;
+
+  --green: #46bf5c;
+  --grey: #f8f9fa;
+  --red: #dc3a35;
+  --white: #ffffff;
+  --black: #495056;
+  --black-lighter: #636364;
+  --black-darker: #343a40;
+  --blue: #75c4fa;
+  --blue-2: #4dadf7;
+  --blue-darker: #3090e5;
+  --blue-ligher: #e9f7ff;
+  --orange: #fd7e14;
+  --orange-lighter: #f8bd4e;
+  --orange-darker: #dd6546;
+  --purple: #8e85e5;
+  --pink: #f584ac;
+  --yellow: #fedf6f;
+  --yellow-lighter: #fff9dd;
+  --yellow-darker: #f9b939;
 }
 
 *,
@@ -26,6 +45,31 @@ html {
 
 body {
   font-family: var(--font-helvetica);
+}
+
+.container {
+  padding: 0 5%;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+@media (--extra-small-1) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media (--small-1) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (--small-2) {
+  html {
+    font-size: 15px;
+  }
 }
 
 @media (--medium-1) {
