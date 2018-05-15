@@ -33,7 +33,7 @@
   }
 
   & a:hover {
-    background: color-mod(var(--blue) blackness(30%));
+    background: color-mod(var(--blue) blackness(10%));
   }
 }
 
@@ -53,7 +53,7 @@
   }
 
   & a:hover {
-    background: color-mod(var(--red) blackness(30%));
+    background: color-mod(var(--red) blackness(10%));
   }
 }
 
@@ -63,7 +63,7 @@
   }
 
   & a:hover {
-    background: color-mod(var(--pink) blackness(30%));
+    background: color-mod(var(--pink) blackness(10%));
   }
 }
 

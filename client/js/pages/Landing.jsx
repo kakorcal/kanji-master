@@ -28,18 +28,33 @@ const Landing = () => (
       <div className="hero__douty illustration__douty__full" />
       <div className="hero__kanji__cards">
         <div className="hero__kanji__card">
+          <div className="hero__hiragana__card">
+            <div className="hero__hiragana__character">ひ</div>
+          </div>
           <div className="hero__kanji__character">日</div>
         </div>
         <div className="hero__kanji__card">
+          <div className="hero__hiragana__card">
+            <div className="hero__hiragana__character">ゆ</div>
+          </div>
           <div className="hero__kanji__character">豊</div>
         </div>
         <div className="hero__kanji__card">
+          <div className="hero__hiragana__card">
+            <div className="hero__hiragana__character">こ</div>
+          </div>
           <div className="hero__kanji__character">子</div>
         </div>
         <div className="hero__kanji__card">
+          <div className="hero__hiragana__card">
+            <div className="hero__hiragana__character">み</div>
+          </div>
           <div className="hero__kanji__character">水</div>
         </div>
         <div className="hero__kanji__card">
+          <div className="hero__hiragana__card">
+            <div className="hero__hiragana__character">と</div>
+          </div>
           <div className="hero__kanji__character">鳥</div>
         </div>
       </div>
